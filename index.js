@@ -97,7 +97,7 @@ function getDayByNumber( number ) {
     fs.writeFileSync('./tmp/tasks.json', JSON.stringify(resp, null, 2), 'utf-8');
 
     const tomorrowTasks = arr.filter(task => {
-        return ( task.date_updated >= tomorrow.getTime() || ['in progress'].includes(task?.status?.status));
+        return ( task.date_updated >= tomorrow.getTime() || (task.date_done && task.date_done >= tomorrow.getTime()) || ['in progress'].includes(task?.status?.status));
     });
 
     const todayTasks = arr.filter(task => {
@@ -106,10 +106,10 @@ function getDayByNumber( number ) {
 
     const tmpl = [];
 
-    tmpl.push(`😎 ${getDayByNumber(tomorrow.getDay())}: `);
+    tmpl.push(`😎 Trabalhei em:`);
 
     if(!tomorrowTasks.length){
-        tmpl.push("👀 Nenhuma tarefa ontem...");
+        tmpl.push("👀 Nenhuma tarefa anterior...");
     } else {
         tomorrowTasks.forEach(task => {
             tmpl.push(`${task.custom_id} => ${task.name}`);
