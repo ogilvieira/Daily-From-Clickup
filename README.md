@@ -1,4 +1,4 @@
-Gera daily baseada em suas taréfas do ClickUp. Não incluí taréfas de outros times assinadas à você.
+Gera daily baseada em suas tarefas do ClickUp. Não incluí taréfas de outros times assinadas à você.
 
 ### Configuração:
 
