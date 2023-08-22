@@ -19,14 +19,14 @@ $ yarn start
 ## SUA DAILY: 22/08/2023 ##
 
 😎 Segunda:
-SPT_TEAM-4213 => [HOTFIX] Informação estática de Copa do Brasil
-SPT_TEAM-4191 => CMS - H1 do Banner
+CAFE_TEAM-4213 => [HOTFIX] Informação estática de Café
+CAFE_TEAM-4191 => CMS - H1 da página de café
 
 👍 Minhas tarefas aguardando Code Review:
-SPT_TEAM-4191 => CMS - H1 do Banner
+CAFE_TEAM-4191 => CMS - H1 da página de café
 
 🫠 Estas aqui estão pausadas:
-SPT_TEAM-4121 => Descentralização da montagem de SEO das páginas
+CAFE_TEAM-4121 => Descentralização da montagem de SEO das páginas de café
 
 🥺 Para hoje: nenhuma tarefa por enquanto.
 
