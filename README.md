@@ -3,6 +3,7 @@ Gera daily baseada em suas taréfas do ClickUp. Não incluí taréfas de outros 
 ### Configuração:
 
 ```
+.env
 # get your clickup's personal token: 
 # https://clickup.com/api/developer-portal/authentication#personal-token
 CLICKUP_TOKEN=YOUR_PERSONAL_TOKEN
