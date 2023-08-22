@@ -22,7 +22,7 @@ async function getTasks( listId, userID ) {
     const date = new Date();
     const updated_gt = new Date(date.getTime() - (7 * 86400000));
 
-    const { data } = await $http.get(`/list/${listId}/task?assignees[]=${userID}&include_closed=true&order_by=updated&date_updated_gt=${updated_gt.getTime()}`);
+    const { data } = await $http.get(`/list/${listId}/task?assignees[]=${userID}&include_closed=true&order_by=updated`);
     return data;
 }
 
